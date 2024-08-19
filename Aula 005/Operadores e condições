@@ -1,0 +1,61 @@
+//operadores lógicos e condicionais
+/*Este código tem como objetivos testar operadores lógicos*/
+
+//importar bibliotecas
+#include <iostream>
+#include <locale.h>
+#include <stdio.h>
+
+using namespace std;
+
+//função principal
+int main(){
+   setlocale(LC_ALL, "Portuguese");
+
+   //variáveis
+   string phrase;
+   int x, y;
+   bool c, d;
+   float a, b;
+
+   //processos
+   cout << "Qual é o valor de a e b? ";
+   cin >> a >> b;
+
+   c = !(2*a > 3);
+   d = c || (4>2);// com ou
+   bool e = c && (4<2);// com 'e'
+
+   cout << phrase << d << "\n";
+   cout << phrase << e;
+
+
+  // printf("%a", c); não sei como fica
+
+   //operaadores lógicos
+   //(2>3) e (4,5) = return 0 //as duas tem de ser verdadeiras para serem verdadeias
+   //(2,3) ou (4,5) = return 1, basta uma das condições serem vedadeiras
+
+   phrase = "\nResultado do operador = ";
+
+   //saida
+   cout << phrase << (3>= 5) <<"\n";
+   cout << phrase << (3 < 5) << "\n";
+   cout << phrase << (3 != 5) << "\n";
+
+
+
+   /*menor-igual =< , maior-igual >= , igual ==
+   diferente !=
+   sim = 1 não = 0
+   ou = || e = &&*/
+
+   cout << "De valor a x e y respectivamente ";
+   cin >> x >> y;
+
+   if(x==y){
+    cout << "x é igual a y";
+   } else{
+    cout << "x é diferente de y";
+   }
+}
