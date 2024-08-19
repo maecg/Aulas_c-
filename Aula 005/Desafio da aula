@@ -1,0 +1,39 @@
+/*Crie um programa em c++ no qual o usuário entre com dois valores e as seguintes comparações e comparações são realizados e retorados
+
+x1*x2*0.5* < 100
+(x1**2 +x2**2)^1/2 ou 4x1 + 2x2 =< 30
+ (x1^2/3 -4x2^4) e (x1^3> 100
+(x2>=x1 ou x2/2 +3 < 10) e x1 >=5
+
+*/
+#include <iostream>
+#include <locale.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+    setlocale(LC_ALL, "Portuguese");
+
+    double x1, x2, p;
+    bool c1, c2, c3, c4;
+    string phrase;
+    cout << "Parametrarize os valores de x1 ,x2 ";
+    cin >> x1 >> x2;
+
+    phrase = "O resultado é ";
+
+    p = 1/3;
+
+    c1 = (x1*x2*0.5 < 100);
+    c2 = (sqrt(pow(x1,2) + pow(x2,2)) >= 30) || (4x1 + 2x2 =< 30);
+    c3 = (pow(pow(x1,2), 1/3) - 4*pow(x2,4) < 1000) && (pow(x1,3) > 100);
+    c4 = ((x2>= x1) || (x2/2 +3 <10)) && (x1>=5);
+
+    cout << phrase << c1 << "\n";
+    cout << phrase << c2 << "\n";
+    cout << phrase << c3 << "\n";
+    cout << phrase << c4 << "\n";
+
+    return 0;
+    }
